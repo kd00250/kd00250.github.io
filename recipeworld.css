@@ -26,6 +26,10 @@ header {
 	top: 0;
 	left: 0;
 }
+#logo img{
+	max-width: 181px;
+	max-height: 195px;
+}
 
 header a {
 	text-decoration: none;
@@ -97,6 +101,7 @@ main {
 	overflow: auto;
 	padding-left: 2em;
 	padding-right: 2em;
+	text-align: center;
 }
 
 .category {
@@ -148,17 +153,32 @@ footer {
 	font-style: italic;
 	padding: 1em;
 	text-align: center;
-}
+	clear: both; 
+  }
 
-table {
-	margin: 1em;
+  table {
 	border: 2px solid #000033;
-	border-collapse: collapse;
+	border-collapse: collapse;  
+	width: 100%;
 }
 
-th {
-	padding: 0.5em;
-	border: 1px solid #000033;
+th, td {
+	border: 2px solid #000033; 
+	text-align: left;
+	padding: 8px;
+}
+
+a {
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+img {
+	max-width: 300px;
+	max-height: 300px; 
 }
 
 form {
@@ -171,11 +191,21 @@ form {
 textarea {
 	margin-bottom: .5em;
 }
+#gallery {
+	text-align: center; 
+  }
+#gallery img{
+	max-width: 300px;
+	max-height: 300px;
+	margin: 0 auto; 
+}
+@media only screen and (min-width: 480px) {
+    #logo {
+        max-width: 100px; /* Adjust the width of the logo for smaller screens */
+    }
+}
 
 @media (min-width: 600px) {
-	header {
-		background-image: url(bigfish.gif);
-	}
 
 	h1 {
 		font-size: 3em;

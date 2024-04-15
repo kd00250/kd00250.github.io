@@ -14,13 +14,13 @@
       <h1><a href="index.html">Recipe World</a></h1>
     </header>
     <div id="logo">
-      <img src="logo.png" alt="logo" width="181" height="171">
+      <img src="logo.png" alt="logo">
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="categories.html">Categories</a></li>
-        <li><a href="askvet.html">Suggest</a></li>
+        <li><a href="suggest.html">Suggest</a></li>
       </ul>
     </nav>
     <main>
@@ -41,6 +41,33 @@
           </p>
         </section>
       </div>
+      <div id="gallery">
+        <img src="beef soup.jpg" alt="beef soup">
+        <img src="potato casserole.jpg" alt="potato casserole">
+        <img src="spaghetti.jpg" alt="spaghetti">
+        <img src="fried chicken.jpg" alt="fried chicken">
+        <img src="dessert pie.jpg" alt="dessert pie">
+      </div>
+      <script>
+        const images = document.querySelectorAll('#gallery img');
+        let index = 0;
+      
+        images.forEach((img, i) => {
+          if (i !== 0) {
+            img.style.display = 'none';
+          }
+        });
+      
+        function rotateImages() {
+          images[index].style.display = 'none';
+          
+          index = (index + 1) % images.length;
+          
+          images[index].style.display = 'block';
+        }
+      
+        setInterval(rotateImages, 3000); 
+      </script>
     </main>
     <footer>
       Copyright &copy; 2024 Recipe World<br>
