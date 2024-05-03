@@ -32,13 +32,19 @@
           <p>Choose from one of our many categories and pick a dish that caters to your taste.</p>
         </section>
         <section>
-          <h3>The Goal of Recipe World</h3>
+          <h3>The Purpose of Recipe World</h3>
           <p>Recipe World exsits to help others get out of their comfort zone and try new types of foods.</p>
         </section>
         <section>
-          <h3>Made For Beginners</h3>
+          <h3>Targeted Towards Any and Every Beginner</h3>
           <p>These recipes are made for beginners and easy to follow to make sure everybody can experience tasty dishes.
           </p>
+        </section>
+        <section>
+          <h3>Don't Know Where to Start?</h3>
+          <p>If you are completely new to cooking check out <b>John Soules' Food</b> website where he gives some very
+            helpful tips for first time here <a
+              href="https://www.johnsoulesfoods.com/blog/cooking-tips-for-beginners/">John's Soules Food</a>.</p>
         </section>
       </div>
       <div id="gallery">
@@ -51,21 +57,21 @@
       <script>
         const images = document.querySelectorAll('#gallery img');
         let index = 0;
-      
+
         images.forEach((img, i) => {
           if (i !== 0) {
             img.style.display = 'none';
           }
         });
-      
+
         function rotateImages() {
           images[index].style.display = 'none';
-          
+
           index = (index + 1) % images.length;
-          
+
           images[index].style.display = 'block';
         }
-      
+
         setInterval(rotateImages, 3000); 
       </script>
     </main>

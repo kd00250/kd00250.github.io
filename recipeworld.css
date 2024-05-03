@@ -123,6 +123,16 @@ section h3 {
 	padding: .25em;
 }
 
+section ul, ol {
+    padding-left: 20px; 
+    padding: 20px;
+}
+
+li {
+    margin-bottom: 10px; 
+    line-height: 1.6; 
+}
+
 section p {
 	padding: 0 .25em .25em .25em;
 }
@@ -199,13 +209,19 @@ textarea {
 	max-height: 300px;
 	margin: 0 auto; 
 }
-@media only screen and (min-width: 480px) {
-    #logo {
-        max-width: 100px; /* Adjust the width of the logo for smaller screens */
+@media only screen and (max-width: 480px) {
+    #logo img {
+        width: 100px;  
+        height: 132px; 
     }
 }
 
 @media (min-width: 600px) {
+
+	#logo img {
+        max-width: 181px;
+		max-height: 195px;
+    }
 
 	h1 {
 		font-size: 3em;
