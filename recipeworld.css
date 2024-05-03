@@ -26,7 +26,8 @@ header {
 	top: 0;
 	left: 0;
 }
-#logo img{
+
+#logo img {
 	max-width: 181px;
 	max-height: 195px;
 }
@@ -123,14 +124,15 @@ section h3 {
 	padding: .25em;
 }
 
-section ul, ol {
-    padding-left: 20px; 
-    padding: 20px;
+section ul,
+ol {
+	padding-left: 20px;
+	padding: 20px;
 }
 
 li {
-    margin-bottom: 10px; 
-    line-height: 1.6; 
+	margin-bottom: 10px;
+	line-height: 1.6;
 }
 
 section p {
@@ -163,17 +165,18 @@ footer {
 	font-style: italic;
 	padding: 1em;
 	text-align: center;
-	clear: both; 
-  }
+	clear: both;
+}
 
-  table {
+table {
 	border: 2px solid #000033;
-	border-collapse: collapse;  
+	border-collapse: collapse;
 	width: 100%;
 }
 
-th, td {
-	border: 2px solid #000033; 
+th,
+td {
+	border: 2px solid #000033;
 	text-align: left;
 	padding: 8px;
 }
@@ -188,7 +191,7 @@ a {
 
 img {
 	max-width: 300px;
-	max-height: 300px; 
+	max-height: 300px;
 }
 
 form {
@@ -201,27 +204,30 @@ form {
 textarea {
 	margin-bottom: .5em;
 }
+
 #gallery {
-	text-align: center; 
-  }
-#gallery img{
+	text-align: center;
+}
+
+#gallery img {
 	max-width: 300px;
 	max-height: 300px;
-	margin: 0 auto; 
+	margin: 0 auto;
 }
+
 @media only screen and (max-width: 480px) {
-    #logo img {
-        width: 100px;  
-        height: 132px; 
-    }
+	#logo img {
+		width: 100px;
+		height: 132px;
+	}
 }
 
 @media (min-width: 600px) {
 
 	#logo img {
-        max-width: 181px;
+		max-width: 181px;
 		max-height: 195px;
-    }
+	}
 
 	h1 {
 		font-size: 3em;
